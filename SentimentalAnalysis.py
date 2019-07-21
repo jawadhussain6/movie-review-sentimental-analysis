@@ -46,9 +46,6 @@ sts=Stats.Stats(dataset.unique_words)
 sa=SentimentalAnalysis()
 msg="films good best"
 
-"""for i in msg.split():
-    if i in sts.stats:
-        print(i, sts.stats[i])"""
 print(sts.posCount, sts.negCount, len(sts.stats))
 print(sa.getNaiveBayesResult(msg, sts))
 print(sa.getBayesianBayesResult(msg, sts))
